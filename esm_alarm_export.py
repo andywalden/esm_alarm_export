@@ -183,7 +183,7 @@ class ESM(object):
         self.user = user
         self.start = start
         self.end = end
-        self._method = 'alarmGetTriggeredAlarmsPaged?triggeredTimeRange=CUSTOM&customStart={}&customEnd={}&assignedUser{}&pageSize=0&pageNumber=0'.format(self.start, self.end, self.user)
+        self._method = 'alarmGetTriggeredAlarms?triggeredTimeRange=CUSTOM&customStart={}&customEnd={}&assignedUser{}&pageSize=0&pageNumber=0'.format(self.start, self.end, self.user)
         self._resp = self.post(self._method, headers=self._headers)
         return self._resp
 
